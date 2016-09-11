@@ -319,10 +319,10 @@ StScrollBar {
 	spacing: 11px;
 	padding: 8px;
 	border-radius: 6px 0 0 6px;
-	border: 1px solid rgba(0,0,0,0.05);
-	color: #dbdee0;
-	background-color: #454d50;
-	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);  }
+	border: 1px solid rgba(0,0,0,1);
+	color: #777a7c;
+	background-color: #ffffff;
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);  }
 	.workspace-thumbnails:rtl {
 		border-radius: 0 6px 6px 0; }
 
@@ -339,7 +339,7 @@ StScrollBar {
 .search-statustext, .no-frequent-applications-label {
 	font-size: 2em;
 	font-weight: bold;
-	color: #dbdee0; }
+	color: #777a7c; }
 
 /* NOTIFICATIONS & MESSAGE TRAY */
 .url-highlighter {
