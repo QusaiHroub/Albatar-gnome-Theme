@@ -35,15 +35,3 @@ gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
 
 include "main.rc"
-
-# App stylings
-include "apps/chrome.rc"
-include "apps/eclipse.rc"
-include "apps/firefox.rc"
-include "apps/gimp.rc"
-include "apps/libreoffice.rc"
-include "apps/panel.rc"
-include "apps/terminal.rc"
-include "apps/thunar.rc"
-include "apps/xchat.rc"
-include "apps/xfce.rc"
