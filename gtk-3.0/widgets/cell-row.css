@@ -1,0 +1,45 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+/****************
+ * cell and row *
+ ****************/
+
+.cell {
+    color: @foreground;
+    border-width: 0px;
+}
+
+.cell:selected,
+.cell:selected:focus {
+    background-color: @selection;
+    color: @selection_foreground;
+}
+
+row:selected,
+row:selected:focus {
+    border: 0 solid shade(@selection, 0.9);
+    background-color: @selection;
+    background-image: none;
+    color: @selection_foreground;
+
+    -GtkWidget-focus-padding: 1;
+    -GtkWidget-focus-line-width: 0;
+}

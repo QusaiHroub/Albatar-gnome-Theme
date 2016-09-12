@@ -1,0 +1,34 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+/*************
+ * Statusbar *
+ *************/
+GtkStatusbar {
+    padding: 0;
+    color: @foreground;
+    border-width: 0px;
+}
+
+GtkStatusbar .frame {
+    padding: 0;
+    border: none;
+    background-color: @background;
+}

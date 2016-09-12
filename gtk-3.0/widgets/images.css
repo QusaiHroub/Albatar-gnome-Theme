@@ -1,0 +1,82 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+/*********
+ * Images *
+ **********/
+ 
+*:active GtkImage,
+*:focus GtkImage,
+*:hover GtkImage {
+    color: @selection_foreground;
+}
+
+*:backdrop GtkImage,
+*:backdrop:hover GtkImage,
+*:active:backdrop GtkImage {
+    color: @backdrop_text;
+    /*-gtk-image-effect: dim;*/
+}
+
+*:insensitive GtkImage {
+    color: @insensitive_text;
+    -gtk-image-effect: dim;
+}
+
+*:insensitive:backdrop GtkImage {
+    color: mix(@backdrop_text, @insensitive_text, 0.5);
+    -gtk-image-effect: dim;
+}
+
+/*******************
+ * Symbolic Images *
+ *******************/
+
+.image {
+    color: @internal_element;
+}
+
+.image:hover {
+    color: @internal_element_prelight;
+}
+
+.image:selected,
+.image:selected:hover {
+    color: @selection_foreground;
+}
+
+.view.image:backdrop,
+.image:backdrop {
+    color: @backdrop_text;
+}
+.view.image:insensitive,
+.image:insensitive {
+    color: @insenstive_text;
+}
+
+.view.image,
+.view.image:hover {
+    color: @view_symbolic;
+}
+
+.view.image:selected,
+.view.image:selected:hover {
+    color: @selection_foreground;
+}

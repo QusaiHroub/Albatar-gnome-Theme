@@ -1,0 +1,117 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+/************
+ * Titlebar *
+ ************/
+
+.titlebar {
+    padding:0;
+    border: none;
+    border-radius: 4px 4px 0 0;
+    background-color: @header;
+    color: @header_text;
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1);
+}
+
+.maximized .titlebar {
+    border-radius: 0px;
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.1);
+    box-shadow: none;
+}
+
+.titlebar:backdrop {
+    background-image: none;
+    background-color: @backdrop_header;
+    color: @backdrop_header_text;
+}
+
+.titlebar:insensitive {
+    color: @insensitive_header_text;
+}
+
+.titlebar.default-decoration {
+    padding: 0;
+    background-color: @header;
+    background-image: none;
+    color: @header_text;
+}
+
+.title,
+.titlebar .title {
+    padding: 0;
+    padding-left: 13px;
+    padding-right: 13px;
+    color: @header_text;
+    font: Bold;
+}
+
+.titlebar .button.linked .title,
+.titlebar .button.flat .title {
+    padding: 0;
+}
+
+/* Subtitle */
+.titlebar .subtitle {
+    padding: 0;
+    font: 9;
+}
+
+.titlebar .subtitle,
+.titlebar .subtitle GtkLabel,
+.titlebar .subtitle GtkImage {
+    color: alpha(@header_text,0.8);
+}
+
+.titlebar .subtitle:backdrop,
+.titlebar .subtitle:backdrop GtkLabel,
+.titlebar .subtitle:backdrop GtkImage  {
+    color: alpha(@backdrop_header_text,0.8);
+}
+
+
+/* Separator */
+.titlebar .separator {
+    background: none;
+    color: @separator;
+}
+
+
+/*************************
+ * Header bar separator  *
+ *************************/
+
+.titlebar > GtkBox > .separator.vertical {
+    -GtkWidget-wide-separators: 1;
+    -GtkWidget-separator-width: 0;
+    background-color: @separator;
+    color: @separator;
+    border:none;
+}
+
+/* Separator */
+.titlebar .separator,
+.titlebar .button .separator,
+.titlebar .button.separator {
+    background: inherit;
+    color: @separator;
+    border:none;
+} 
+

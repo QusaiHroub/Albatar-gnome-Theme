@@ -1,0 +1,120 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+
+/**************
+ * Spinbutton *
+ **************/
+.spinbutton {
+    border-radius: 2px;
+    border: 1px solid @border;
+    box-shadow: none;
+    color: @text;
+}
+
+.spinbutton:hover,
+.spinbutton:focus {
+    box-shadow: none;
+}
+
+.spinbutton .button {
+    border-radius: 0px;
+    background: none;
+    border: none;
+    padding: 2px 4px;
+    color: @foreground;
+}
+
+.spinbutton .button:last-child {
+    border-radius: 0px;
+    background: none;
+    border: none;
+    /*border-top-right-radius: 5px;*/
+    /*border-bottom-right-radius: 5px;*/
+    padding: 2px 4px;
+    color: @foreground;
+}
+
+/* Buttons */
+
+.spinbutton .button:hover {
+    box-shadow: none;
+    border: none;
+    color: @selection;
+    background: none;
+}
+
+.spinbutton .button:active {
+    box-shadow: none;
+    background-color: @selection;
+    color: @selection_foreground;
+}
+
+.spinbutton .button:insensitive {
+    box-shadow: none;
+    background-color: @insensitive_background;
+    color: @insensitive_text;
+}
+
+/* Entry */
+.spinbutton.entry {
+    background-color: @base;
+    color: @text;
+}
+
+.spinbutton.entry:focus {
+    color: @text;
+}
+
+.spinbutton.entry:insensitive {
+    color: @insensitive_text;
+    background-color: @insensitive_background;
+}
+
+.spinbutton.entry:backdrop {
+    color: @backdrop_text;
+    background-color: @backdrop_background;
+}
+
+
+/* Labels */
+.spinbutton GtkLabel {
+    color: @text;
+}
+
+.spinbutton:active GtkLabel,
+.spinbutton:focus GtkLabel,
+.spinbutton:hover GtkLabel {
+    color: @selection_foreground;
+}
+
+.spinbutton:backdrop GtkLabel,
+.spinbutton:backdrop:hover GtkLabel,
+.spinbutton:active:backdrop GtkLabel {
+    color: @backdrop_text;
+}
+
+.spinbutton:insensitive GtkLabel {
+    color: @insensitive_text;
+}
+
+.spinbutton:insensitive:backdrop GtkLabel {
+    color: mix(@backdrop_text, @insensitive_text, 0.5);
+}

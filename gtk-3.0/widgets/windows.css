@@ -1,0 +1,72 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+/**********
+ * Window *
+ **********/
+
+@define-color window_shadow alpha(#000, 0.4);
+@define-color backdrop_window_shadow alpha(#000, 0.2);
+
+.window-frame {
+	border:none;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 1px @window_shadow;
+    margin: 10px; /* this is used for the resize cursor area */
+}
+
+.window-frame:backdrop {
+    border-radius: 4px;
+    box-shadow: 0 2px 3px 0 @backdrop_window_shadow;
+}
+
+.window-frame.menu.csd,
+.window-frame.popup.csd {
+    border-radius: 4px;
+    box-shadow: 0 3px 6px alpha (#000, 0.16),
+                0 3px 6px alpha (#000, 0.23);
+    margin: 0;
+}
+
+.menu .window-frame.menu.csd,
+.menu .window-frame.popup.csd {
+    box-shadow: 0 10px 20px alpha (#000, 0.19),
+                0 6px 6px alpha (#000, 0.23);
+}
+
+.window-frame.tooltip.csd {
+    border-radius: 4px;
+    box-shadow: none;
+    margin: 0;
+}
+
+.window-frame:backdrop {
+    box-shadow: 0 3px 6px alpha (#000, 0.16),
+                0 3px 6px alpha (#000, 0.23);
+}
+
+GtkDialog.window-frame,
+GtkDialog.window-frame:backdrop,
+.window-frame.dialog,
+.window-frame.dialog:backdrop {
+    border-radius: 4px;
+    box-shadow: 0 10px 20px alpha (#000, 0.19),
+                0 6px 6px alpha (#000, 0.23);
+}

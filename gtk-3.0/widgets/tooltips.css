@@ -1,0 +1,43 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+/************
+ * Tooltips *
+ ************/
+ 
+.tooltip,
+.overlay-bar {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 2px;
+    background-color: @base;
+    color: @text;
+    box-shadow: 0 1px 2px 0 alpha(#000, 0.3);
+}
+
+.tooltip * {
+    background: none;
+    background-color: @base;
+}
+
+.tooltip GtkLabel,
+.overlay-bar GtkLabel {
+    color: @text;
+}

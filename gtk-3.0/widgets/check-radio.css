@@ -1,0 +1,145 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+/*****************
+ * Check Buttons *
+ *****************/
+
+GtkCheckButton:hover,
+GtkCheckButton:active:hover,
+GtkCheckButton:selected,
+GtkCheckButton:selected:focus {
+}
+
+.check,
+.check row:selected,
+.check row:selected:focus {
+    color: @foreground;
+}
+
+.check:insensitive,
+.check row:selected:insensitive,
+.check row:selected:focus:insensitive {
+    color: @insensitive_text;
+}
+
+
+.check:backdrop,
+.check row:selected:backdrop,
+.check row:selected:focus:backdrop {
+    color: @backdrop_text;
+}
+
+.check:insensitive:backdrop,
+.check row:selected:insensitive:backdrop,
+.check row:selected:focus:insensitive:backdrop {
+    color: @backdrop_insensitive_text;
+}
+
+.check:selected {
+    color: @selection_foreground;
+}
+
+
+.check:selected:backdrop {
+    color: @backdrop_selection_foreground;
+}
+
+/*****************
+ * Radio Buttons *
+ *****************/
+
+.radio {
+    background: none;
+}
+
+.radio:insensitive {
+    color: @insensitive_text;
+}
+
+.radio:selected {
+    color: @selection_foreground;
+}
+
+.radio:backdrop {
+    color: @backdrop_text;
+}
+
+.radio:insensitive:backdrop {
+    color: @backdrop_insensitive_text;
+}
+
+.radio:selected:backdrop {
+    color: @backdrop_selection_foreground;
+}
+
+/* Symbolic Radio */
+.menu .menuitem.radio {
+  -gtk-icon-source: -gtk-icontheme("radio-symbolic");
+  color: @text;
+  icon-shadow: none;
+}
+
+.menu .menuitem.radio:active, .menu .menuitem.radio:checked {
+    -gtk-icon-source: -gtk-icontheme("radio-checked-symbolic");
+}
+
+.menu .menuitem.radio:inconsistent {
+    -gtk-icon-source: -gtk-icontheme("radio-mixed-symbolic");
+}
+.menu .menuitem.radio:hover {
+    color: @base;
+}
+.menu .menuitem.radio:insensitive {
+    color: @insensitive_text;
+}
+
+
+/* Menuitem Checks & Radios */
+
+.menuitem.check,
+.menuitem.radio {
+    background: none;
+    background-image: none;
+    background: none;
+    box-shadow: none;
+}
+
+.menuitem.check,
+.menuitem.check:active,
+.menuitem.check:active:hover,
+.menuitem.check:active:insensitive,
+.menuitem.check:hover,
+.menuitem.check:inconsistent,
+.menuitem.check:inconsistent:hover,
+.menuitem.check:inconsistent:insensitive,
+.menuitem.check:insensitive,
+.menuitem.radio,
+.menuitem.radio:active,
+.menuitem.radio:active:hover,
+.menuitem.radio:active:insensitive,
+.menuitem.radio:hover,
+.menuitem.radio:inconsistent,
+.menuitem.radio:inconsistent:hover ,
+.menuitem.radio:inconsistent:insensitive,
+.menuitem.radio:insensitive {
+    background: none;
+    box-shadow: none;
+}

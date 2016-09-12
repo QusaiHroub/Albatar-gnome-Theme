@@ -1,0 +1,103 @@
+/* Albatar gnome Theme
+* Copyright 2016 Albatar group.
+*
+* This file is part of the Albatar gnome Theme.
+*
+* Authors:
+* Sam Hewitt <sam@snwh.org>
+*
+* Layout and code style adapted from the Paper theme.
+*
+* This program is free software; you can redistribute it and/or modify it
+* under the terms and conditions of the GNU General Public License,
+* version 3, as published by the Free Software Foundation.
+*
+* This program is distributed in the hope it will be useful, but WITHOUT ANY
+* WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+* FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+* more details.
+*/
+
+/***********************
+* Composited Indicator *
+************************/
+
+.composited-indicator {
+    background-color: transparent;
+    color: @panel_text;
+}
+
+.composited-indicator:active {
+    background-color: alpha(#fff, 0.1);
+    color: @header;
+}
+
+.composited-indicator > GtkWidget > GtkWidget:first-child {
+    padding: 0 2px;
+}
+
+.panel-app-button > GtkWidget > GtkWidget:first-child {
+    padding: 0 2px 0 4px;
+}
+
+.composited-indicator .menuitem:active,
+.composited-indicator .menuitem:prelight {
+    border-style: none;
+    background-image: none;
+    background-color: shade(@panel, 1.05);
+    color: @panel_text;
+    box-shadow: none;
+}
+
+
+/* Images */
+.composited-indicator .menuitem:focus GtkImage,
+.composited-indicator .menuitem GtkImage {
+    color: @text;
+}
+
+.composited-indicator .menuitem:prelight GtkImage,
+.composited-indicator .menuitem:active GtkImage,
+.composited-indicator .menuitem:hover GtkImage {
+    color: @selection_foreground;
+}
+
+.composited-indicator .menuitem:backdrop GtkImage,
+.composited-indicator .menuitem:backdrop:hover GtkImage,
+.composited-indicator .menuitem:active:backdrop GtkImage {
+    color: @backdrop_text;
+}
+
+.composited-indicator .menuitem:insensitive GtkImage {
+    color: @insensitive_text;
+}
+
+.composited-indicator .menuitem:insensitive:backdrop GtkImage {
+    color: mix(@backdrop_text, @insensitive_text, 0.5);
+}
+
+/* Labels */
+.composited-indicator .menuitem:focus GtkLabel,
+.composited-indicator .menuitem GtkLabel {
+    color: @text;
+}
+
+.composited-indicator .menuitem:prelight GtkLabel,
+.composited-indicator .menuitem:hover GtkLabel,
+.composited-indicator .menuitem:active GtkLabel {
+    color: @selection_foreground;
+}
+
+.composited-indicator .menuitem:backdrop GtkLabel,
+.composited-indicator .menuitem:backdrop:hover GtkLabel,
+.composited-indicator .menuitem:active:backdrop GtkLabel {
+    color: @backdrop_text;
+}
+
+.composited-indicator .menuitem:insensitive GtkLabel {
+    color: @insensitive_text;
+}
+
+.composited-indicator .menuitem:insensitive:backdrop GtkLabel {
+    color: mix(@backdrop_text, @insensitive_text, 0.5);
+}
