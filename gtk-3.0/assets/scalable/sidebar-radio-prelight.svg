@@ -14,7 +14,7 @@
    id="svg27352"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="sidebar-radio-checked.svg">
+   sodipodi:docname="sidebar-radio-prelight.svg">
   <defs
      id="defs27354" />
   <sodipodi:namedview
@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="22.197802"
-     inkscape:cx="-8.1502477"
+     inkscape:cx="-3.6903466"
      inkscape:cy="8"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -54,13 +54,13 @@
      inkscape:groupmode="layer">
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#000000;fill-opacity:0.94117647;fill-rule:nonzero;stroke:none;stroke-width:1.27423298000000007;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#aaaaaa;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path5784-4"
        sodipodi:cx="660.96808"
        sodipodi:cy="255.0668"
        sodipodi:rx="4.5078058"
        sodipodi:ry="7.2937827"
        d="m 665.47588,255.0668 a 4.5078058,7.2937827 0 1 1 -9.01561,0 4.5078058,7.2937827 0 1 1 9.01561,0 z"
-       transform="matrix(0.88734967,0,0,0.54841228,-578.5098,-131.88177)" />
+       transform="matrix(-0.88734967,0,0,0.54841228,594.50981,-131.88177)" />
   </g>
 </svg>
