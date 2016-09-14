@@ -319,7 +319,7 @@ StScrollBar {
 	spacing: 11px;
 	padding: 8px;
 	border-radius: 6px 0 0 6px;
-	border: 1px solid rgba(0,0,0,1);
+	border: 1px solid rgba(0,0,0,0.1);
 	color: #777a7c;
 	background-color: #ffffff;
 	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.2);  }
@@ -1156,13 +1156,13 @@ StScrollBar {
 	background-gradient-direction: none;
 	padding: 7px 9px;
 	border-radius: 4px;
-	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5); }
+	box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.5), inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2); }
 	.search-entry:focus, .search-entry:hover {
 		padding: 7px 9px;
 		border: none;
 		background-color: #ffffff;
 		color: #787878;
-		box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+		box-shadow: inset 0 0 0 2px rgba(0, 150, 136, 1);
 		transition-duration: 200ms; }
 .search-entry .search-entry-icon {
 	icon-size: 1.5em;
